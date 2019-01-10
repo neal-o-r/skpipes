@@ -11,7 +11,7 @@ s = StandardScaler()
 n = Normalizer()
 l = LogisticRegression()
 
-pipe = s » l # this returns a pipeline, comprised of StandardScaler and LogisticRegression
+pipe = s >> l # this returns a pipeline, comprised of StandardScaler and LogisticRegression
 
 union = s + n # a feature union of StandardScaler and Normaliser
 
